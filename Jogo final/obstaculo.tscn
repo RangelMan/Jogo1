@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ball.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 17.5, 20.5 )
+
+[node name="obstaculo" type="KinematicBody2D"]
+position = Vector2( 178, 334 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 9.5, 15.5 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 8.5, 16 )
+scale = Vector2( 1.48, 1.69231 )
+texture = ExtResource( 1 )
